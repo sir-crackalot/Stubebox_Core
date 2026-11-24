@@ -1,0 +1,83 @@
+package de.stubebox.tv.core.epg
+
+import de.stubebox.tv.core.live.DEFAULT_CATCHUP_DAYS
+import de.stubebox.tv.core.parser.XtEpgEntry
+
+/**
+ * The rules for adding a catch-up channel's past from the provider's own schedule of it
+ * ([de.stubebox.tv.core.repository.EpgRepository.fillArchiveGuide]).
+ *
+ * Many Xtream providers put about a day of past programmes in `xmltv.php` while their archive keeps
+ * up to a week: the recordings exist, the guide cannot reach them. The per-channel schedule lists the
+ * whole archive. What it adds only fills the finished stretches the feeds leave empty — before
+ * their oldest row, between two of them, or after their last one when the feed was not refreshed —
+ * and the feed's rows are never replaced or overlapped. The rows live in a guide store of their own ([storeId]) and are replaced as
+ * a whole at each fill ([changed]).
+ */
+internal object ArchiveGuidePlan {
+    private const val DAY_MS = 24L * 60 * 60 * 1000
+
+    /** A channel's schedule is asked for again after this long… */
+    const val REFETCH_MS = 6L * 60 * 60 * 1000
+
+    /** …or after this long when the last attempt failed. */
+    const val RETRY_MS = 30L * 60 * 1000
+
+    private const val STORE_BASE = 1_000_000_000L
+
+    /**
+     * The guide store a playlist's archive rows are written under, apart from the playlist's own id.
+     * A guide sync deletes every row of the store it syncs that the feed no longer lists, and a
+     * playlist's own guide is synced under the playlist's id (the guide screen's refresh), so rows kept
+     * there were gone after the next refresh. EPG sources take small negative ids (-1, -2, …) and
+     * playlists positive ones; this range is clear of both. Not an EPG source, it ranks below all of
+     * them in [GuidePriority], as the playlist's own guide does.
+     */
+    fun storeId(playlistSourceId: Long): Long = -(STORE_BASE + playlistSourceId)
+
+    fun due(lastTryMs: Long?, nowMs: Long): Boolean = lastTryMs == null || nowMs - lastTryMs >= REFETCH_MS
+
+    /** The attempt time to record after a failure, so the next one is due [RETRY_MS] later. */
+    fun failedAt(nowMs: Long): Long = nowMs - REFETCH_MS + RETRY_MS
+
+    /**
+     * The oldest instant worth storing: the channel's archive depth (the shared default when the
+     * playlist does not say), at least one day and never beyond [maxBackMs], the guide's retention.
+     */
+    fun windowStart(nowMs: Long, catchupDays: Int, maxBackMs: Long): Long {
+        val days = (catchupDays.takeIf { it > 0 } ?: DEFAULT_CATCHUP_DAYS).coerceAtLeast(1)
+        return nowMs - (days * DAY_MS).coerceAtMost(maxBackMs)
+    }
+
+    /**
+     * What to store: finished programmes inside the window that overlap none of [feedRows], the
+     * (start, stop) of every programme the guide feeds hold for the channel. A feed that was not
+     * refreshed stops days before now, and the recent past is exactly what catch-up replays most.
+     * Nothing when the feeds hold nothing for the channel: its row then comes from the provider's
+     * short EPG. Duplicates are dropped; sorted by start.
+     */
+    fun toStore(
+        listings: List<XtEpgEntry>,
+        feedRows: List<Pair<Long, Long>>,
+        windowStartMs: Long,
+        nowMs: Long,
+    ): List<XtEpgEntry> {
+        if (feedRows.isEmpty()) return emptyList()
+        return listings.asSequence()
+            .filter { it.startMs in windowStartMs until it.stopMs && it.stopMs <= nowMs }
+            .filter { entry -> feedRows.none { (start, stop) -> entry.startMs < stop && start < entry.stopMs } }
+            .filter { it.title.isNotBlank() }
+            .distinctBy { it.startMs }
+            .sortedBy { it.startMs }
+            .toList()
+    }
+
+    /**
+     * Whether the rows an earlier fill stored ([storedStarts]) are to be replaced by [keep]. They are
+     * replaced as a whole rather than added to: the feed's rows move between two fills, so rows
+     * stored last time may now overlap them or leave a stretch empty, and the provider's schedule
+     * itself moves on.
+     */
+    fun changed(keep: List<XtEpgEntry>, storedStarts: List<Long>): Boolean =
+        keep.map { it.startMs } != storedStarts.sorted()
+}
