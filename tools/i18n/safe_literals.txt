@@ -20,7 +20,7 @@
 # category technical: Reviewed non-user-facing technical literal.
 
 2	empty	core/src/main/java/de/stubebox/tv/core/CoreBuildInfo.kt	\0
-1	technical	core/src/main/java/de/stubebox/tv/core/CoreBuildInfo.kt	DEINNAME/Stubebox
+1	technical	core/src/main/java/de/stubebox/tv/core/CoreBuildInfo.kt	sir-crackalot/Stubebox
 1	log	core/src/main/java/de/stubebox/tv/core/CorePerf.kt	StubeboxPerf
 3	technical	core/src/main/java/de/stubebox/tv/core/backup/BackupContainer.kt	..
 2	technical	core/src/main/java/de/stubebox/tv/core/backup/BackupContainer.kt	Corrupt backup header

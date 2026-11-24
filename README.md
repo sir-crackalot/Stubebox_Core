@@ -26,20 +26,20 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DEINNAME/Stubebox_Core/actions/workflows/build.yml">
-    <img alt="Core CI" src="https://github.com/DEINNAME/Stubebox_Core/actions/workflows/build.yml/badge.svg">
+  <a href="https://github.com/sir-crackalot/Stubebox_Core/actions/workflows/build.yml">
+    <img alt="Core CI" src="https://github.com/sir-crackalot/Stubebox_Core/actions/workflows/build.yml/badge.svg">
   </a>
-  <a href="https://github.com/DEINNAME/Stubebox_Core/actions/workflows/i18n.yml">
-    <img alt="i18n" src="https://github.com/DEINNAME/Stubebox_Core/actions/workflows/i18n.yml/badge.svg">
+  <a href="https://github.com/sir-crackalot/Stubebox_Core/actions/workflows/i18n.yml">
+    <img alt="i18n" src="https://github.com/sir-crackalot/Stubebox_Core/actions/workflows/i18n.yml/badge.svg">
   </a>
-  <a href="https://github.com/DEINNAME/Stubebox_Core/actions/workflows/publish.yml">
-    <img alt="Publish core" src="https://github.com/DEINNAME/Stubebox_Core/actions/workflows/publish.yml/badge.svg">
+  <a href="https://github.com/sir-crackalot/Stubebox_Core/actions/workflows/publish.yml">
+    <img alt="Publish core" src="https://github.com/sir-crackalot/Stubebox_Core/actions/workflows/publish.yml/badge.svg">
   </a>
 </p>
 
 ---
 
-Stubebox Core is the **headless half** of [Stubebox](https://github.com/DEINNAME/Stubebox), the open-source
+Stubebox Core is the **headless half** of [Stubebox](https://github.com/sir-crackalot/Stubebox), the open-source
 IPTV **player** for Android TV. Everything that is not a screen lives here: the Room database and
 every migration, playlist sync and parsing for **M3U / Xtream / Stalker**, EPG, backup and restore,
 profiles, downloads, settings storage, **every user-visible string**, and the **dual playback
@@ -118,8 +118,8 @@ minSdk 26
 
 ## 🔗 Who depends on this
 
-- **[Stubebox for Android TV](https://github.com/DEINNAME/Stubebox)** — televisions and set-top boxes, shipping.
-- **[Stubebox for mobile](https://github.com/DEINNAME/Stubebox_Mobile)** — phones and tablets, shipping.
+- **[Stubebox for Android TV](https://github.com/sir-crackalot/Stubebox)** — televisions and set-top boxes, shipping.
+- **[Stubebox for mobile](https://github.com/sir-crackalot/Stubebox_Mobile)** — phones and tablets, shipping.
 
 **A change here affects both.** Nothing is released from here until the TV app has been rebuilt
 against it. There is no such thing as a change that only affects one app.
@@ -156,12 +156,12 @@ real data — installing a test APK wipes the catalog, playlists, profiles and h
 
 Core publishes `de.stubebox.tv:core` and `de.stubebox.tv:player-core` to Stubebox's own Maven repository —
 public, **no account or token needed**. It also serves `de.stubebox.tv:libmpv`, the mpv engine built by
-[Stubebox_libmpv](https://github.com/DEINNAME/Stubebox_libmpv), which `player-core` depends on.
+[Stubebox_libmpv](https://github.com/sir-crackalot/Stubebox_libmpv), which `player-core` depends on.
 
 ```kotlin
 // settings.gradle.kts
 maven {
-    url = uri("https://deinname.github.io/Stubebox_Core/maven")
+    url = uri("https://sir-crackalot.github.io/Stubebox_Core/maven")
     content { includeGroup("de.stubebox.tv") }
 }
 
@@ -225,7 +225,7 @@ core's strings as a bare `R.string.*`.
 <!-- i18n-contribution:start -->
 ## Help translate Stubebox
 
-If your language is already available, contribute interface translations across Stubebox's six Android resource components on [Hosted Weblate](https://hosted.weblate.org/projects/stubebox/). If it is not listed, [open a language request ticket](https://github.com/DEINNAME/Stubebox/issues/new?template=feature_request.yml&title=%5BLanguage%5D%20Add%20) first. A maintainer will review the request, register the locale, and prepare its base translation files on Hosted Weblate. Once the language appears on Hosted Weblate, you can start translating it there. See the [language contributor guide](tools/i18n/README.md) for identifiers, validation, and promotion policy.
+If your language is already available, contribute interface translations across Stubebox's six Android resource components on [Hosted Weblate](https://hosted.weblate.org/projects/stubebox/). If it is not listed, [open a language request ticket](https://github.com/sir-crackalot/Stubebox/issues/new?template=feature_request.yml&title=%5BLanguage%5D%20Add%20) first. A maintainer will review the request, register the locale, and prepare its base translation files on Hosted Weblate. Once the language appears on Hosted Weblate, you can start translating it there. See the [language contributor guide](tools/i18n/README.md) for identifiers, validation, and promotion policy.
 <!-- i18n-contribution:end -->
 
 New user-visible text is never English-only: a string is not finished until it exists in every
@@ -245,7 +245,7 @@ them. Tags are prefixed — `core-1.0.0` — and pushing one publishes both modu
 **Release core** workflow (Actions tab → Run workflow) pushes that tag for you: it reads `coreVersion`
 from `main` and refuses if the tag already exists or `CHANGELOG.md` has no section for it.
 
-Every published version also gets a [**GitHub Release**](https://github.com/DEINNAME/Stubebox_Core/releases),
+Every published version also gets a [**GitHub Release**](https://github.com/sir-crackalot/Stubebox_Core/releases),
 and the order is deliberate: CI runs the full gate, publishes both artifacts to the Maven repository, waits
 until they are served, and only then publishes the release. So a release exists only for a version that actually built and
 shipped — and it is the release, not the tag, that opens the pull request moving each app onto the
@@ -279,7 +279,7 @@ Subtitle search and downloads are powered by [OpenSubtitles](https://www.opensub
 
 ### ▶️ Playback engines
 
-[libmpv / mpv](https://mpv.io/) (FFmpeg), built for Stubebox by [Stubebox_libmpv](https://github.com/DEINNAME/Stubebox_libmpv) from
+[libmpv / mpv](https://mpv.io/) (FFmpeg), built for Stubebox by [Stubebox_libmpv](https://github.com/sir-crackalot/Stubebox_libmpv) from
 [jarnedemeulemeester/libmpv-android](https://github.com/jarnedemeulemeester/libmpv-android) · [Media3 / ExoPlayer](https://developer.android.com/media/media3)
 
 ### 🧩 Built with
@@ -295,7 +295,7 @@ project for its own license.
 ### 🎨 Brand
 
 The lowercase **stubebox** wordmark was designed for Stubebox by [@m3th0d93](https://github.com/m3th0d93)
-in [issue #227](https://github.com/DEINNAME/Stubebox/issues/227).
+in [issue #227](https://github.com/sir-crackalot/Stubebox/issues/227).
 
 ## ⚖️ Legal
 

@@ -10,7 +10,7 @@ name: Bump consumers
 # a newly finished language is stripped out of the APK with every check green.
 #
 # This workflow only OPENS the PR; it never merges. Merging is the consumer repo's business, and the
-# TV app decides to do it itself: `automerge-core-bump.yml` in DEINNAME/Stubebox merges the PR once every
+# TV app decides to do it itself: `automerge-core-bump.yml` in sir-crackalot/Stubebox merges the PR once every
 # check on it is green, guarded on the branch name, the author, and a diff touching only the two
 # files below. A consumer without that workflow simply gets a PR that waits for a human.
 #
@@ -63,13 +63,13 @@ jobs:
       fail-fast: false          # one consumer failing must not block the others
       matrix:
         consumer:
-          - DEINNAME/Stubebox
+          - sir-crackalot/Stubebox
           # Private until the mobile app's first release, so CONSUMER_BUMP_TOKEN has to grant access
           # to it explicitly — a fine-grained PAT lists repositories one by one, and adding this line
           # without adding the repo to the token fails on `gh pr list` with a 404 that reads exactly
           # like a typo. It carries its own `automerge-core-bump.yml`, so its
           # pull request merges itself once green, exactly like the TV app's.
-          - DEINNAME/Stubebox_Mobile
+          - sir-crackalot/Stubebox_Mobile
 
     steps:
       # Check out the RELEASED commit, not whatever main has drifted to. `tools/i18n/locales.json`
@@ -155,7 +155,7 @@ jobs:
           EOF
 
           cat > ../pr-body.md <<EOF
-          Core \`${VERSION}\` has been published to Stubebox's Maven repository (https://deinname.github.io/Stubebox_Core/maven).
+          Core \`${VERSION}\` has been published to Stubebox's Maven repository (https://sir-crackalot.github.io/Stubebox_Core/maven).
 
           - \`stubeboxCore\` moved to \`${VERSION}\` in \`gradle/libs.versions.toml\`
           - \`tools/i18n/locales.json\` refreshed from core

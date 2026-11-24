@@ -15,7 +15,7 @@ Spanish is `es` (there is no `es_ES` definition), while Latin America is `es_419
 <!-- canonical-weblate:start -->
 **Canonical project overview:** <https://hosted.weblate.org/projects/stubebox/>
 
-**New-language request form:** <https://github.com/DEINNAME/Stubebox/issues/new?template=feature_request.yml&title=%5BLanguage%5D%20Add%20>
+**New-language request form:** <https://github.com/sir-crackalot/Stubebox/issues/new?template=feature_request.yml&title=%5BLanguage%5D%20Add%20>
 
 The app, README, and this guide use these values from `community.json`; update that single source when either route changes.
 <!-- canonical-weblate:end -->

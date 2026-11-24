@@ -76,7 +76,7 @@ publishing {
     }
     repositories {
         // A local staging repository; tools/publish_pages.py copies it into Stubebox's public Maven
-        // repository (this repo's gh-pages branch, https://deinname.github.io/Stubebox_Core/maven).
+        // repository (this repo's gh-pages branch, https://sir-crackalot.github.io/Stubebox_Core/maven).
         maven {
             name = "Staging"
             url = uri(rootProject.layout.buildDirectory.dir("staging-maven"))

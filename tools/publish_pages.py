@@ -3,8 +3,8 @@
 
     PAGES_TOKEN=... python3 tools/publish_pages.py <staging-dir> [--keep ARTIFACT=N ...]
 
-The repository is the `gh-pages` branch of DEINNAME/Stubebox_Core, served by GitHub Pages at
-https://deinname.github.io/Stubebox_Core/maven — no login needed to download. Both Stubebox_Core and
+The repository is the `gh-pages` branch of sir-crackalot/Stubebox_Core, served by GitHub Pages at
+https://sir-crackalot.github.io/Stubebox_Core/maven — no login needed to download. Both Stubebox_Core and
 Stubebox_libmpv publish through this script; the two copies (tools/publish_pages.py in each repo) are
 identical and must stay so.
 
@@ -28,9 +28,9 @@ import tempfile
 import time
 import urllib.request
 
-REPO = "DEINNAME/Stubebox_Core"
+REPO = "sir-crackalot/Stubebox_Core"
 BRANCH = "gh-pages"
-SITE = "https://deinname.github.io/Stubebox_Core/maven"
+SITE = "https://sir-crackalot.github.io/Stubebox_Core/maven"
 GROUP_PATH = "de/stubebox/tv"
 GROUP = "de.stubebox.tv"
 CHECKSUMS = ("md5", "sha1", "sha256", "sha512")

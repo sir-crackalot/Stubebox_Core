@@ -45,7 +45,7 @@ lifecycle = "2.11.0"
 # Two defaults changed here: playback now uses dynamic scheduling instead of a fixed interval, and
 # the default PCM buffer is a fixed 500ms — both are felt by the forced-stereo DefaultAudioSink path.
 media3 = "1.11.1"
-# libmpv (FFmpeg-based) — Stubebox's own build (DEINNAME/Stubebox_libmpv): pinned mpv master, FFmpeg release, filters.
+# libmpv (FFmpeg-based) — Stubebox's own build (sir-crackalot/Stubebox_libmpv): pinned mpv master, FFmpeg release, filters.
 # Versions are YYYY.MM.N; a new one arrives as a "Pin libmpv" pull request and waits for the device test.
 libmpv = "2026.11.0"
 

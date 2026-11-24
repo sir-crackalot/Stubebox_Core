@@ -30,10 +30,10 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         // Stubebox's own Maven repository (this repo's gh-pages branch) — public, no login. Here for
-        // de.stubebox.tv:libmpv, the mpv engine built by DEINNAME/Stubebox_libmpv.
+        // de.stubebox.tv:libmpv, the mpv engine built by sir-crackalot/Stubebox_libmpv.
         maven {
             name = "Stubebox"
-            url = uri("https://deinname.github.io/Stubebox_Core/maven")
+            url = uri("https://sir-crackalot.github.io/Stubebox_Core/maven")
             content { includeGroup("de.stubebox.tv") }
         }
     }

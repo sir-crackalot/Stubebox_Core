@@ -27,9 +27,9 @@
 - **👤 Zoom, text size and recent searches per profile**
 - **📂 Subtitles: "Find in folder" and "Load matching subtitle automatically"**
 - **⏳ "Performing database migration" screen while an update converts the database**
-- **🎮 Player buttons: choose what D-pad Up/Down do in the live player** (community PR DEINNAME/Stubebox#382 by @Pax24fr)
-- **🖼️ Episodes keep the provider's own picture (DEINNAME/Stubebox#367)**
-- **🖥️ Player zoom: Force 20:9** (DEINNAME/Stubebox#378)
+- **🎮 Player buttons: choose what D-pad Up/Down do in the live player** (community PR sir-crackalot/Stubebox#382 by @Pax24fr)
+- **🖼️ Episodes keep the provider's own picture (sir-crackalot/Stubebox#367)**
+- **🖥️ Player zoom: Force 20:9** (sir-crackalot/Stubebox#378)
 
 ### 🐛 Fixes
 
