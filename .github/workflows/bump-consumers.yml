@@ -69,7 +69,6 @@ jobs:
           # without adding the repo to the token fails on `gh pr list` with a 404 that reads exactly
           # like a typo. It carries its own `automerge-core-bump.yml`, so its
           # pull request merges itself once green, exactly like the TV app's.
-          - sir-crackalot/Stubebox_Mobile
 
     steps:
       # Check out the RELEASED commit, not whatever main has drifted to. `tools/i18n/locales.json`
@@ -112,7 +111,6 @@ jobs:
 
           if [ -z "${GH_TOKEN:-}" ]; then
             echo "::error::CONSUMER_BUMP_TOKEN is not set on this repository."
-            echo "Add a fine-grained PAT for Stubebox, Stubebox_Core and Stubebox_Mobile with Contents and Pull"
             echo "requests read/write: Settings -> Secrets and variables -> Actions."
             exit 1
           fi
