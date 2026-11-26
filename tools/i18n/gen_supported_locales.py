@@ -26,7 +26,7 @@ LOCALES_JSON = ROOT / "tools" / "i18n" / "locales.json"
 RES = ROOT / "core" / "src" / "main" / "res"
 # The generated table lives in :core (every app built on core reads the same locale list); the
 # string resources it is generated FROM are still the TV app's until they move too.
-OUT = ROOT / "core" / "src" / "main" / "java" / "tv" / "own" / "stubebox" / "core" / "i18n" / "SupportedLocales.kt"
+OUT = ROOT / "core" / "src" / "main" / "java" / "de" / "stubebox" / "tv" / "core" / "i18n" / "SupportedLocales.kt"
 CANONICAL_OUT = OUT
 COMMUNITY_CONFIG = ROOT / "tools" / "i18n" / "community.json"
 README = ROOT / "README.md"
