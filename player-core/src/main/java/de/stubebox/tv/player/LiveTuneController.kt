@@ -891,14 +891,14 @@ class LiveTuneController(
     private fun startAlarm(channel: ChannelEntity, token: Int) {
         deadlineJob?.cancel()
         deadlineJob = scope.launch {
-            while (ladder.stubeboxs(channel.streamUrl)) {
+            while (ladder.owns(channel.streamUrl)) {
                 val left = (ladder.deadlineAt() ?: return@launch) - host.nowMs()
                 if (left <= 0) break
                 delay(left)
             }
             // Both gates matter: the ladder can still own a channel the user walked away from, and this
             // alarm stops an engine — on mpv's side the shared player, which may be showing a film.
-            if (!ladder.stubeboxs(channel.streamUrl)) return@launch
+            if (!ladder.owns(channel.streamUrl)) return@launch
             if (!isCurrent(token)) return@launch
             val detail = "no picture within ${armedBudgetMs / 1000}s of tuning"
             engineLog("'${channel.name}' — giving up: $detail")
@@ -931,7 +931,7 @@ class LiveTuneController(
         aboutFormat: Boolean = !handOver.refused,
     ) {
         val reason = handOver.text
-        if (!isCurrent(token) || !ladder.stubeboxs(channel.streamUrl)) return // a newer tune owns the ladder now
+        if (!isCurrent(token) || !ladder.owns(channel.streamUrl)) return // a newer tune owns the ladder now
         val nowMs = host.nowMs()
         // ExoPlayer played this channel, then found its content unplayable (not a connection problem).
         // The opening budget is long spent by then, which would refuse mpv, the engine most likely to

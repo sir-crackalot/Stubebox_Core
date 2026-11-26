@@ -260,11 +260,11 @@ class LiveLadderTest {
         val second = "http://l.test/live/2.ts"
         val ladder = LiveLadder()
         runBlocking { ladder.arm(first, EnginePreference.EXO_FIRST) { true } }
-        assertTrue(ladder.stubeboxs(first))
+        assertTrue(ladder.owns(first))
 
         runBlocking { ladder.arm(second, EnginePreference.EXO_FIRST) { true } }
-        assertFalse(ladder.stubeboxs(first))
-        assertTrue(ladder.stubeboxs(second))
+        assertFalse(ladder.owns(first))
+        assertTrue(ladder.owns(second))
     }
 
     @Test
