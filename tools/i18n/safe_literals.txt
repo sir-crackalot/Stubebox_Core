@@ -148,8 +148,8 @@
 3	json	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	openSubtitles
 4	json	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	order
 1	technical	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	own
-1	technical	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	stubebox-backup.json
-1	technical	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	stubebox-backup.stubebox
+1	technical	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	owntv-backup.json
+1	technical	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	owntv-backup.own
 13	json	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	p
 4	json	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	password
 4	json	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	pinHash
@@ -187,6 +187,9 @@
 4	json	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	stalkerSignature
 2	json	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	startupChannels
 3	json	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	startupModes
+1	technical	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	stubebox
+1	technical	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	stubebox-backup.json
+1	technical	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	stubebox-backup.stubebox
 2	json	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	subtitles
 4	json	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	syncLive
 4	json	core/src/main/java/de/stubebox/tv/core/backup/BackupManager.kt	syncMovies
@@ -228,7 +231,6 @@
 12	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	name
 5	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	oid
 10	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	order
-1	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	stubebox_pending_userdata
 14	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	p
 6	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	pos
 13	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	prog
@@ -239,6 +241,7 @@
 9	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	sort
 12	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	src
 5	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	srid
+1	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	stubebox_pending_userdata
 16	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataResolver.kt	t
 1	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataWriter.kt	fav
 4	json	core/src/main/java/de/stubebox/tv/core/backup/UserDataWriter.kt	his
@@ -342,9 +345,9 @@
 1	compiler	core/src/main/java/de/stubebox/tv/core/companion/CompanionController.kt	ResourceType
 1	technical	core/src/main/java/de/stubebox/tv/core/companion/CompanionController.kt	base64,
 1	technical	core/src/main/java/de/stubebox/tv/core/companion/CompanionController.kt	data:
+1	file-path	core/src/main/java/de/stubebox/tv/core/companion/CompanionController.kt	remote-backup-export
 1	technical	core/src/main/java/de/stubebox/tv/core/companion/CompanionController.kt	stubebox-remote-bg
 1	technical	core/src/main/java/de/stubebox/tv/core/companion/CompanionController.kt	stubebox-remote-restore
-1	file-path	core/src/main/java/de/stubebox/tv/core/companion/CompanionController.kt	remote-backup-export
 1	json	core/src/main/java/de/stubebox/tv/core/companion/CompanionController.kt	{}
 13	empty	core/src/main/java/de/stubebox/tv/core/companion/CompanionHtml.kt	\0
 1	technical	core/src/main/java/de/stubebox/tv/core/companion/CompanionHtml.kt	"
@@ -1025,7 +1028,6 @@
 1	room-schema	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	name
 1	log	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	normId
 1	log	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	normName
-1	room-schema	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	stubebox.db
 4	sql	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	playback_prefs
 5	room-schema	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	series
 1	room-schema	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	series_fts
@@ -1036,6 +1038,7 @@
 1	room-schema	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	stalkerDeviceId2
 1	room-schema	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	stalkerSerialNumber
 1	room-schema	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	stalkerSignature
+1	room-schema	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	stubebox.db
 1	sql	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	subtitleLang
 1	room-schema	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	syncLive
 1	room-schema	core/src/main/java/de/stubebox/tv/core/database/StubeboxDatabase.kt	syncMovies
@@ -2150,8 +2153,8 @@
 1	technical	core/src/main/java/de/stubebox/tv/core/epg/EpgSourceStore.kt	[]
 1	preference-key	core/src/main/java/de/stubebox/tv/core/epg/EpgSourceStore.kt	migrated_v1
 1	preference-key	core/src/main/java/de/stubebox/tv/core/epg/EpgSourceStore.kt	next_id
-1	technical	core/src/main/java/de/stubebox/tv/core/epg/EpgSourceStore.kt	stubebox_epg_sources
 1	preference-key	core/src/main/java/de/stubebox/tv/core/epg/EpgSourceStore.kt	sources
+1	technical	core/src/main/java/de/stubebox/tv/core/epg/EpgSourceStore.kt	stubebox_epg_sources
 2	empty	core/src/main/java/de/stubebox/tv/core/epg/GuideCandidates.kt	\0
 1	log	core/src/main/java/de/stubebox/tv/core/epg/GuideCandidates.kt	Guide candidate limit $limit reached (named=${named.size} withProgrammes=${withProgrammes.size}) — list truncated
 1	log	core/src/main/java/de/stubebox/tv/core/epg/GuideCandidates.kt	GuideCandidates
@@ -2195,11 +2198,6 @@
 1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	movie
 4	uri	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	name
 1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	open
-1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	stubebox
-1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	stubebox://open/live
-1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	stubebox://play/episode
-1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	stubebox://play/live
-1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	stubebox://play/movie
 1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	play
 4	uri	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	remoteId
 2	uri	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	season
@@ -2208,6 +2206,11 @@
 2	uri	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	seriesRemoteId
 2	uri	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	seriesSourceId
 4	uri	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	sourceId
+1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	stubebox
+1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	stubebox://open/live
+1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	stubebox://play/episode
+1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	stubebox://play/live
+1	protocol	core/src/main/java/de/stubebox/tv/core/launcher/LauncherDeepLink.kt	stubebox://play/movie
 1	technical	core/src/main/java/de/stubebox/tv/core/launcher/LauncherRecommendationPlanner.kt	${episode.seasonNumber}-${episode.episodeNumber}
 1	technical	core/src/main/java/de/stubebox/tv/core/launcher/LauncherRecommendationPlanner.kt	SHA-256
 1	technical	core/src/main/java/de/stubebox/tv/core/launcher/LauncherRecommendationPlanner.kt	episode:${show.sourceId}:${show.remoteId ?: show.name}:${episode.remoteId ?: "${episode.seasonNumber}-${episode.episodeNumber}"}
@@ -2242,9 +2245,9 @@
 1	log	core/src/main/java/de/stubebox/tv/core/live/GuideReader.kt	rows=${stored.size} collapsed=${collapsed.size} providerTail=${tail.size}
 1	log	core/src/main/java/de/stubebox/tv/core/live/GuideReader.kt	shiftGroups=${keyed.groupBy { it.third }.size} chunks=$chunks rows=$rowsRead
 2	log	core/src/main/java/de/stubebox/tv/core/live/GuideReader.kt	totalMs=${SystemClock.elapsedRealtime() - startedAt}
-1	log	core/src/main/java/de/stubebox/tv/core/live/LiveArchiveUrls.kt	StubeboxHome
 1	log	core/src/main/java/de/stubebox/tv/core/live/LiveArchiveUrls.kt	Stalker catch-up resolve failed channelId=${ch.id}
 1	log	core/src/main/java/de/stubebox/tv/core/live/LiveArchiveUrls.kt	Stalker rewind resolve failed channelId=${ch.id}
+1	log	core/src/main/java/de/stubebox/tv/core/live/LiveArchiveUrls.kt	StubeboxHome
 1	uri	core/src/main/java/de/stubebox/tv/core/live/LiveArchiveUrls.kt	ts
 1	protocol	core/src/main/java/de/stubebox/tv/core/live/LiveArchiveUrls.kt	xc
 1	protocol	core/src/main/java/de/stubebox/tv/core/live/LiveArchiveUrls.kt	xtream
@@ -3003,7 +3006,6 @@
 1	log	core/src/main/java/de/stubebox/tv/core/recording/RecordingEngine.kt	dash recording id=${row.id} tracks=${tracks.joinToString(",") { "${it.kind}:${it.id}" }} mux=$needsMux
 1	log	core/src/main/java/de/stubebox/tv/core/recording/RecordingEngine.kt	dash recording muxed id=$id bytes=${muxed.length()}
 1	log	core/src/main/java/de/stubebox/tv/core/recording/RecordingEngine.kt	dash recording muxed id=$id bytes=${scratch.length()}
-1	technical	core/src/main/java/de/stubebox/tv/core/recording/RecordingEngine.kt	stubebox-dash-
 1	log	core/src/main/java/de/stubebox/tv/core/recording/RecordingEngine.kt	recording attempt $attempt failed id=$id: ${e.message}
 1	log	core/src/main/java/de/stubebox/tv/core/recording/RecordingEngine.kt	recording cannot schedule manifest id=${row.id} rep=${track.id}
 1	log	core/src/main/java/de/stubebox/tv/core/recording/RecordingEngine.kt	recording lost its representation id=${row.id} rep=${track.id}
@@ -3020,6 +3022,7 @@
 1	log	core/src/main/java/de/stubebox/tv/core/recording/RecordingEngine.kt	segment failed id=${row.id} rep=${track.id}: ${error.message}
 1	log	core/src/main/java/de/stubebox/tv/core/recording/RecordingEngine.kt	segment refused id=${row.id} rep=${track.id} n=${segment.number}
 1	log	core/src/main/java/de/stubebox/tv/core/recording/RecordingEngine.kt	segment refused id=${row.id} seq=${segment.sequence}
+1	technical	core/src/main/java/de/stubebox/tv/core/recording/RecordingEngine.kt	stubebox-dash-
 1	technical	core/src/main/java/de/stubebox/tv/core/recording/RecordingNotifications.kt	$effectiveLocale:$name
 1	technical	core/src/main/java/de/stubebox/tv/core/recording/RecordingNotifications.kt	stubebox_recordings
 1	protocol	core/src/main/java/de/stubebox/tv/core/recording/RecordingReceivers.kt	android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED
@@ -3339,8 +3342,6 @@
 1	technical	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	night_mode
 1	preference-key	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	open_subtitles_api_key
 1	preference-key	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	open_subtitles_server_url
-1	technical	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	stubebox_positions
-1	technical	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	stubebox_settings
 3	json	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	p
 1	preference-key	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	panel_w_live_cat
 1	preference-key	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	panel_w_live_list
@@ -3428,6 +3429,8 @@
 1	technical	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	startup_mode_
 1	preference-key	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	startup_mode_$pid
 4	preference-key	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	startup_mode_$profileId
+1	technical	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	stubebox_positions
+1	technical	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	stubebox_settings
 1	preference-key	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	sub_font
 1	preference-key	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	sub_scale
 1	preference-key	core/src/main/java/de/stubebox/tv/core/settings/SettingsRepository.kt	sub_scale_exo
@@ -3650,8 +3653,8 @@
 1	json	core/src/main/java/de/stubebox/tv/core/sports/EspnParser.kt	yellow-card
 1	json	core/src/main/java/de/stubebox/tv/core/sports/EspnParser.kt	yellowCard
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/EspnParser.kt	·
-1	technical	core/src/main/java/de/stubebox/tv/core/sports/LiveMatchCardService.kt	match
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/LiveMatchCardService.kt	de.stubebox.tv.core.action.STOP_LIVE_MATCH
+1	technical	core/src/main/java/de/stubebox/tv/core/sports/LiveMatchCardService.kt	match
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	$FILE.tmp
 1	log	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	Stubebox-Sports
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	alert
@@ -3662,16 +3665,16 @@
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	at
 2	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	ch
 1	log	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	could not arm $uri: ${it.message}
+1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	de.stubebox.tv.core.action.MATCH_DUE
 2	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	lead
 2	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	m
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	match
-1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	stubebox-sports-${if (reminder) "reminder" else "alert"}-$key
-1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	stubebox://match-alert/
-1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	stubebox://match-reminder/
 2	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	r
 2	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	reminder
 2	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	s
-1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	de.stubebox.tv.core.action.MATCH_DUE
+1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	stubebox-sports-${if (reminder) "reminder" else "alert"}-$key
+1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	stubebox://match-alert/
+1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	stubebox://match-reminder/
 2	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlertScheduler.kt	w
 2	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlerts.kt	\0
 2	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchAlerts.kt	a
@@ -3685,11 +3688,11 @@
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchNotifications.kt	${m.key}#${a.kind}#$score
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchNotifications.kt	${match.key}#reminder
 2	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchNotifications.kt	0
+1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchNotifications.kt	de.stubebox.tv.extra.SPORTS_MATCH
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchNotifications.kt	stubebox-sports
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchNotifications.kt	stubebox_sports_goals
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchNotifications.kt	stubebox_sports_live
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchNotifications.kt	stubebox_sports_reminders
-1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchNotifications.kt	de.stubebox.tv.extra.SPORTS_MATCH
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/MatchNotifications.kt	·
 3	technical	core/src/main/java/de/stubebox/tv/core/sports/SportOnChannels.kt	\0
 1	technical	core/src/main/java/de/stubebox/tv/core/sports/SportOnChannels.kt	$it
@@ -4901,12 +4904,12 @@
 3	json	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	lvl
 1	technical	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	malformed sealed blob
 1	technical	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	opensub_auth
-1	preference-key	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	stubebox_opensub_auth
 3	json	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	p
 1	technical	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	profile_$profileId
 3	json	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	rem
 3	json	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	rst
 1	log	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	stored session unreadable for profile $profileId — erasing (signed out)
+1	preference-key	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	stubebox_opensub_auth
 2	json	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	t
 2	json	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	u
 2	json	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesAuthStore.kt	vip
@@ -4928,8 +4931,8 @@
 1	protocol	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesClient.kt	OpenSubtitles
 1	protocol	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesClient.kt	OpenSubtitles HTTP ${resp.code}
 1	protocol	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesClient.kt	OpenSubtitles returned malformed JSON for $pathAndQuery
-1	protocol	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesClient.kt	Stubebox
 2	protocol	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesClient.kt	POST
+1	protocol	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesClient.kt	Stubebox
 1	protocol	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesClient.kt	UTF-8
 1	protocol	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesClient.kt	User-Agent
 1	protocol	core/src/main/java/de/stubebox/tv/core/subtitles/OpenSubtitlesClient.kt	X-OS-Host
@@ -5403,9 +5406,9 @@
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/LocalAutoSyncStore.kt	lastAttemptAt
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/LocalAutoSyncStore.kt	lastSuccessAt
 1	preference-key	core/src/main/java/de/stubebox/tv/core/sync/local/LocalAutoSyncStore.kt	notice:
-1	technical	core/src/main/java/de/stubebox/tv/core/sync/local/LocalAutoSyncStore.kt	stubebox_local_auto_sync
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/LocalAutoSyncStore.kt	profile
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/LocalAutoSyncStore.kt	sections
+1	technical	core/src/main/java/de/stubebox/tv/core/sync/local/LocalAutoSyncStore.kt	stubebox_local_auto_sync
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/LocalAutoSyncStore.kt	theirProfile
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/LocalAutoSyncStore.kt	theirSections
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/LocalAutoSyncStore.kt	timing
@@ -5450,8 +5453,8 @@
 1	json	core/src/main/java/de/stubebox/tv/core/sync/local/LocalSyncDiscovery.kt	id
 1	protocol	core/src/main/java/de/stubebox/tv/core/sync/local/LocalSyncManager.kt	${Build.MANUFACTURER} ${Build.MODEL}
 1	protocol	core/src/main/java/de/stubebox/tv/core/sync/local/LocalSyncManager.kt	LocalSyncManager
-1	protocol	core/src/main/java/de/stubebox/tv/core/sync/local/LocalSyncManager.kt	Stubebox
 1	protocol	core/src/main/java/de/stubebox/tv/core/sync/local/LocalSyncManager.kt	Pairing failed on the host side
+1	protocol	core/src/main/java/de/stubebox/tv/core/sync/local/LocalSyncManager.kt	Stubebox
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/LocalSyncManager.kt	accepted
 1	protocol	core/src/main/java/de/stubebox/tv/core/sync/local/LocalSyncManager.kt	app
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/LocalSyncManager.kt	autoPort
@@ -5473,11 +5476,11 @@
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/PairedDeviceStore.kt	id
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/PairedDeviceStore.kt	lastSyncAt
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/PairedDeviceStore.kt	name
-1	json	core/src/main/java/de/stubebox/tv/core/sync/local/PairedDeviceStore.kt	stubebox_paired_devices
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/PairedDeviceStore.kt	pairedAt
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/PairedDeviceStore.kt	port
 2	json	core/src/main/java/de/stubebox/tv/core/sync/local/PairedDeviceStore.kt	secret
 1	json	core/src/main/java/de/stubebox/tv/core/sync/local/PairedDeviceStore.kt	selfId
+1	json	core/src/main/java/de/stubebox/tv/core/sync/local/PairedDeviceStore.kt	stubebox_paired_devices
 1	log	core/src/main/java/de/stubebox/tv/core/sync/work/CatalogBackfillWorker.kt	CatalogBackfillWorker
 1	log	core/src/main/java/de/stubebox/tv/core/sync/work/CatalogBackfillWorker.kt	backfill complete sourceId=$sourceId — indexes analyzed, trending enqueued
 1	log	core/src/main/java/de/stubebox/tv/core/sync/work/CatalogBackfillWorker.kt	backfill failed sourceId=$sourceId — retrying later
@@ -5736,7 +5739,6 @@
 2	json	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	movieTotalPages
 2	json	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	movies
 2	json	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	o
-1	preference-key	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	stubebox_trending_schedule
 2	json	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	p
 2	json	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	pop
 3	json	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	r
@@ -5745,6 +5747,7 @@
 2	json	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	seriesPagesLoaded
 2	json	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	seriesTotalPages
 1	preference-key	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	shared_candidates
+1	preference-key	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	stubebox_trending_schedule
 2	json	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	t
 3	json	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	y
 1	json	core/src/main/java/de/stubebox/tv/core/trending/TrendingScheduleStore.kt	{}
@@ -5756,8 +5759,8 @@
 1	file-path	core/src/main/java/de/stubebox/tv/core/tv/LiveLogoPosterArt.kt	${destination.name}.tmp
 1	file-path	core/src/main/java/de/stubebox/tv/core/tv/LiveLogoPosterArt.kt	${key(source, aspectRatio)}.png
 1	technical	core/src/main/java/de/stubebox/tv/core/tv/LiveLogoPosterArt.kt	%02x
-1	technical	core/src/main/java/de/stubebox/tv/core/tv/LiveLogoPosterArt.kt	.stubebox-live-logo-art
 1	file-path	core/src/main/java/de/stubebox/tv/core/tv/LiveLogoPosterArt.kt	.png
+1	technical	core/src/main/java/de/stubebox/tv/core/tv/LiveLogoPosterArt.kt	.stubebox-live-logo-art
 1	technical	core/src/main/java/de/stubebox/tv/core/tv/LiveLogoPosterArt.kt	SHA-256
 1	uri	core/src/main/java/de/stubebox/tv/core/tv/LiveLogoPosterArt.kt	content://${context.packageName}$AUTHORITY_SUFFIX/${file.name}
 1	file-path	core/src/main/java/de/stubebox/tv/core/tv/LiveLogoPosterArt.kt	tv-live-logo-art
@@ -5765,9 +5768,9 @@
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	$profileId|${mediaType.name}|$stableKey
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	${surface.name}:${mediaType.name}:$groupId
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	%02x
-1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	StubeboxHome
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	RestrictedApi
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	SHA-256
+1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	StubeboxHome
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	android.resource://${context.packageName}/$resId
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	clearProfile profile=$profileId done
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	clearProfile profile=$profileId rows=${rows.size}
@@ -5783,7 +5786,6 @@
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	ensureRecentLiveChannel update profile=$profileId channelId=${existing.providerProgramId} allowBrowsable=$allowBrowsableRequest
 1	url	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	http://
 1	url	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	https://
-1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	stubebox:${surface.name.lowercase()}:${sha256Hex("$profileId|${mediaType.name}|$stableKey")}
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	persistRecentLive insert failed profile=${row.profileId} row=${row.describe()}
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	persistRecentLive insert profile=${row.profileId} programId=$providerId row=${row.describe()}
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	persistRecentLive insert returned null profile=${row.profileId} row=${row.describe()}
@@ -5815,6 +5817,7 @@
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	refreshWatchNext profile=$profileId desired=${desired.size} existing=${existing.size}
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	row=${row.describe()}
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	sourceCount=${liveSourceIds.size} existing=${existingRows.size}
+1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	stubebox:${surface.name.lowercase()}:${sha256Hex("$profileId|${mediaType.name}|$stableKey")}
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	syncEpisode delete profile=$profileId episodeId=$episodeId groupId=$currentGroupId reason=ineligible
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	syncEpisode delete profile=$profileId episodeId=$episodeId groupId=$currentGroupId reason=show-complete-last-episode
 1	log	core/src/main/java/de/stubebox/tv/core/tv/TvHomeRepository.kt	syncEpisode profile=$profileId episodeId=$episodeId showId=${show.id} groupId=$currentGroupId existing=${existingCurrent?.providerProgramId ?: -1}
@@ -5903,6 +5906,7 @@
 1	json	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	assets
 1	json	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	body
 1	json	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	browser_download_url
+1	uri	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	de.stubebox.tv.UPDATE_INSTALL_STATUS
 1	url	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	https://api.github.com/repos/${CoreBuildInfo.releaseRepo}/releases/latest
 1	log	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	install cancelled by user
 1	log	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	install refused status=$status message=$message
@@ -5911,7 +5915,6 @@
 1	file-path	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	stubebox-update.apk
 1	json	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	tag_name
 1	log	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	truncated: got $copied of $total bytes
-1	uri	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	de.stubebox.tv.UPDATE_INSTALL_STATUS
 1	log	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	unparseable APK (${apk.length()} bytes)
 1	log	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	update check failed: ${error.message}
 1	log	core/src/main/java/de/stubebox/tv/core/update/UpdateManager.kt	update download failed: ${error.message}
@@ -6425,7 +6428,6 @@
 1	log	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	open stalled — $detail
 1	log	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	open stalled: $detail — the stream is buffered but unplayable here
 1	log	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	output audio delay: $ms ms, engine total ${_audioDelayMs.value + ms} ms
-1	technical	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	stubebox-http-evict
 1	log	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	panel serves both HLS and plain TS — dropped the HLS lesson
 1	technical	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	panel to mpv
 1	log	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	passthrough audio: re-priming the output after the track change
@@ -6493,6 +6495,7 @@
 1	technical	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	still ${buffered}ms after ${waitedMs}ms
 1	technical	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	stop() — intentional
 1	technical	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	stream frozen — no progress ${noProgressMs}ms
+1	technical	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	stubebox-http-evict
 1	technical	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	targetDurSec=${playlist.targetDurationUs / 1_000_000.0} windowSec=${playlist.durationUs / 1_000_000.0}
 1	log	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	targetOffsetSec=${targetOffsetSecs ?: -1}
 1	technical	player-core/src/main/java/de/stubebox/tv/player/LivePreviewEngine.kt	text
@@ -6620,6 +6623,194 @@
 1	technical	player-core/src/main/java/de/stubebox/tv/player/MpvLoadOptions.kt	video-sync
 1	technical	player-core/src/main/java/de/stubebox/tv/player/MpvLoadOptions.kt	wait_keyframe=1
 2	technical	player-core/src/main/java/de/stubebox/tv/player/MpvLoadOptions.kt	yes
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackEngines.kt	DEPRECATION
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackEngines.kt	Stubebox-Memory
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackEngines.kt	memory poll off
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackEngines.kt	memory poll on
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackEngines.kt	memory pressure $pressure avail=${info.availMem shr 20}MiB threshold=${info.threshold shr 20}MiB
+6	empty	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	\0
+2	file-path	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	$relativePath$EXPORT_NAME
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${Build.MANUFACTURER} ${Build.MODEL}
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${Build.MANUFACTURER} ${Build.MODEL} · Android ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})
+1	file-path	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${Environment.DIRECTORY_DOWNLOADS}/
+1	file-path	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${Environment.DIRECTORY_DOWNLOADS}/$EXPORT_NAME
+1	sql	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${MediaStore.MediaColumns.DISPLAY_NAME}=? AND ${MediaStore.MediaColumns.RELATIVE_PATH}=?
+1	sql	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${MediaStore.MediaColumns._ID} DESC
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	--- last crash ---
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	--- live diagnostics (most recent) ---
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	:direct
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	:gpu
+2	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	:hardware
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Android ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Audio output error — the device couldn't play this audio format
+1	assertion	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Could not create the Download folder
+1	assertion	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Could not create the playback report
+1	assertion	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Could not open the existing playback report
+1	assertion	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Could not open the playback report
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	DRM / secure-decoder error
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Device ran out of memory for the decoder — try closing other apps
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Exported ${stamp.format(java.util.Date())}
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Hardware video decoder error — transient, try again
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Hardware video decoder is busy or can't handle this stream
+1	compiler	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	InlinedApi
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Network problem reaching the provider
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	PlaybackErrorLog
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Provider blocked the connection — too many streams at once (HTTP 509)
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Provider denied access (HTTP 403) — credentials, subscription, or IP block
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Provider rejected the request (HTTP 400) — bad or expired link
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Provider rejected your login (HTTP 401)
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Provider's SSL certificate is invalid or expired
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Stream format not recognized (bad or partial stream)
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Stream not found on the provider (HTTP 404)
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Stubebox playback report
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	This device's decoder doesn't support this video format/profile (e.g. HEVC 10-bit)
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	[${stamp.format(java.util.Date(e.atMs))}] ${e.kind} · ${e.engine} · ${if (e.live) "live" else "vod"}
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	android
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	atMs
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	codec
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	decoderDirect
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	decoderHardware
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	decoderKind
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	decoderName
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	engine
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	hardware
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	hardware:direct
+2	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	kind
+3	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	live
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	model
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	playback error log unreadable — starting a new one
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	playback_errors.json
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	raw
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	raw : $it
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	reason
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	reason: $it
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	resolution
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	software
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	software:gpu
+2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	spec
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	spec : $it
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	stubebox-errorlog
+1	file-path	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	stubebox-playback-report.txt
+1	mime	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	text/plain
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	vod
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	w
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	wt
+1	file-path	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	yyyy-MM-dd HH:mm:ss
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	•
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackSession.kt	DEPRECATION
+1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackSession.kt	Stubebox
+1	compiler	player-core/src/main/java/de/stubebox/tv/player/PlaybackSettings.kt	UNCHECKED_CAST
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	${e.tag}: ${e.text}
+1	regex	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	(?:\\bhttp(?: error)? |\\bresponse code[:= ]+|\\bstatus(?: code)?[:= ]+)(\\d{3})\\b
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	*:S
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	-T
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	-v
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0x80001000
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0x80001001
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0x80001100
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0xffffffea
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0xfffffff3
+1	regex	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0xfffffff4
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	1
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	400
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	401
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	403
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	404
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	509
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	ACodec:E
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	AudioFlinger:E
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	AudioSink:E
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	AudioTrack:W
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	C2PlatformStore:E
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	CCodec:E
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	Codec2Client:E
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	HTTP_PROXY_AUTH
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	MediaCodec:E
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	MediaCodecAudioRenderer:E
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	MediaCodecRenderer:E
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	MediaCodecVideoRenderer:E
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	OMXClient:E
+1	regex	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	\\b(?:err(?:or)?|status|code)\\s*[:=]?\\s*(?:-12|0xfffffff4)\\b
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	audio codec
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	audioflinger
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	audiosink
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	audiotrack
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	cert_
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	certif
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	certificate verify failed
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	connection refused
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	connection reset
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	cryptoinfo
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	drm
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	enomem
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	error
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	error_key
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	format_unsupported
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	insufficient
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	invalid data found
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	logcat
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	no memory
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	not using proxy
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	omx_errorformat
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	out of memory
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	ssl
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	stubebox-logcat
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	tag
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	timed out
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	timeout
+1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	unrecognized file format
+1	technical	player-core/src/main/java/de/stubebox/tv/player/ProviderLessons.kt	\0
+1	technical	player-core/src/main/java/de/stubebox/tv/player/ProviderLessons.kt	${lesson.kind.name} ${lesson.host} $at
+1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	${height}p
+1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	1080p
+1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	1440p
+1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	480p
+1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	4K
+1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	720p
+1	log	player-core/src/main/java/de/stubebox/tv/player/ResponseDeadline.kt	no response headers within ${deadlineMs}ms
+1	technical	player-core/src/main/java/de/stubebox/tv/player/ResponseDeadline.kt	stubebox-response-deadline
+1	log	player-core/src/main/java/de/stubebox/tv/player/ScreenOff.kt	ScreenOff
+1	log	player-core/src/main/java/de/stubebox/tv/player/ScreenOff.kt	lockNow failed
+1	technical	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	#
+2	protocol	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	#EXT-X-STREAM-INF:
+1	regex	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	(?<![A-Z-])BANDWIDTH=(\\d+)
+1	technical	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	HLG
+1	technical	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	PQ
+1	technical	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	VIDEO-RANGE="?([A-Za-z]+)
+1	empty	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	\0
+1	technical	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	${roundUpToMib(bytes) / MIB}MiB
+1	regex	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	(\\d+)\\s*([KkMmGg]i[Bb])?
+1	technical	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	gib
+1	technical	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	kib
+1	technical	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	mib
+1	empty	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	\0
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	DASH
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	HLS
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	MKV
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	MP4
+1	protocol	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	MPEG-TS
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	dash
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	hls
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	m2ts
+2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	m3u
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	m3u8
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	m4a
+2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	m4v
+1	mime	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	matroska
+2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mkv
+2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mov
+1	mime	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mp2t
+2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mp4
+2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mpd
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mpegts
+1	mime	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mpegurl
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mts
+1	mime	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	quicktime
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	ts
+2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	webm
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamInfo.kt	$width×$height
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamInfo.kt	5.1
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamInfo.kt	7.1
 11	empty	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	\0
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	$STREAM_RECONNECT_OPTIONS,$LIVE_TS_RECONNECT_OPTIONS
 2	log	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	$detail — handing to ExoPlayer
@@ -6690,10 +6881,10 @@
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	OFF
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	OMX.google
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	ON
-2	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	Stubebox:mpv
-1	log	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	StubeboxPlayer
 1	log	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	PlayerBudget: $budget
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	STEREO
+2	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	Stubebox:mpv
+1	log	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	StubeboxPlayer
 1	protocol	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	User-Agent
 1	log	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	VOD ended mid-stream at ${pos}ms of ${dur}ms — reloading from position ($next/$budget)
 1	log	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	VOD ended mid-stream at ${pos}ms of ${dur}ms, reconnects spent — surfacing error
@@ -6921,7 +7112,6 @@
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	on
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	on2 vp8
 1	log	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	output audio delay: $ms ms, engine total ${_audioDelayMs.value + ms} ms
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	stubebox-mpv-destroy
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	panel answered HTTP 458; this panel is now opened one stream at a time
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	panscan
 3	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	path:$path
@@ -6969,6 +7159,7 @@
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	stereo
 3	log	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	stop
 2	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	stream-lavf-o
+1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	stubebox-mpv-destroy
 5	protocol	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	sub
 2	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	sub-add
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	sub-create-cc-track
@@ -7059,194 +7250,6 @@
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	xsub
 25	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	yes
 1	technical	player-core/src/main/java/de/stubebox/tv/player/StubeboxPlayer.kt	ytdl
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackEngines.kt	DEPRECATION
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackEngines.kt	Stubebox-Memory
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackEngines.kt	memory poll off
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackEngines.kt	memory poll on
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackEngines.kt	memory pressure $pressure avail=${info.availMem shr 20}MiB threshold=${info.threshold shr 20}MiB
-6	empty	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	\0
-2	file-path	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	$relativePath$EXPORT_NAME
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${Build.MANUFACTURER} ${Build.MODEL}
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${Build.MANUFACTURER} ${Build.MODEL} · Android ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})
-1	file-path	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${Environment.DIRECTORY_DOWNLOADS}/
-1	file-path	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${Environment.DIRECTORY_DOWNLOADS}/$EXPORT_NAME
-1	sql	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${MediaStore.MediaColumns.DISPLAY_NAME}=? AND ${MediaStore.MediaColumns.RELATIVE_PATH}=?
-1	sql	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	${MediaStore.MediaColumns._ID} DESC
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	--- last crash ---
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	--- live diagnostics (most recent) ---
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	:direct
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	:gpu
-2	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	:hardware
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Android ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Audio output error — the device couldn't play this audio format
-1	assertion	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Could not create the Download folder
-1	assertion	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Could not create the playback report
-1	assertion	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Could not open the existing playback report
-1	assertion	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Could not open the playback report
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	DRM / secure-decoder error
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Device ran out of memory for the decoder — try closing other apps
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Exported ${stamp.format(java.util.Date())}
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Hardware video decoder error — transient, try again
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Hardware video decoder is busy or can't handle this stream
-1	compiler	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	InlinedApi
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Network problem reaching the provider
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Stubebox playback report
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	PlaybackErrorLog
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Provider blocked the connection — too many streams at once (HTTP 509)
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Provider denied access (HTTP 403) — credentials, subscription, or IP block
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Provider rejected the request (HTTP 400) — bad or expired link
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Provider rejected your login (HTTP 401)
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Provider's SSL certificate is invalid or expired
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Stream format not recognized (bad or partial stream)
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	Stream not found on the provider (HTTP 404)
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	This device's decoder doesn't support this video format/profile (e.g. HEVC 10-bit)
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	[${stamp.format(java.util.Date(e.atMs))}] ${e.kind} · ${e.engine} · ${if (e.live) "live" else "vod"}
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	android
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	atMs
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	codec
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	decoderDirect
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	decoderHardware
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	decoderKind
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	decoderName
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	engine
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	hardware
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	hardware:direct
-2	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	kind
-3	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	live
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	model
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	stubebox-errorlog
-1	file-path	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	stubebox-playback-report.txt
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	playback error log unreadable — starting a new one
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	playback_errors.json
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	raw
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	raw : $it
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	reason
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	reason: $it
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	resolution
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	software
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	software:gpu
-2	json	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	spec
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	spec : $it
-1	mime	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	text/plain
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	vod
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	w
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	wt
-1	file-path	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	yyyy-MM-dd HH:mm:ss
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackErrorLog.kt	•
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackSession.kt	DEPRECATION
-1	technical	player-core/src/main/java/de/stubebox/tv/player/PlaybackSession.kt	Stubebox
-1	compiler	player-core/src/main/java/de/stubebox/tv/player/PlaybackSettings.kt	UNCHECKED_CAST
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	${e.tag}: ${e.text}
-1	regex	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	(?:\\bhttp(?: error)? |\\bresponse code[:= ]+|\\bstatus(?: code)?[:= ]+)(\\d{3})\\b
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	*:S
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	-T
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	-v
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0x80001000
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0x80001001
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0x80001100
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0xffffffea
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0xfffffff3
-1	regex	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	0xfffffff4
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	1
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	400
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	401
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	403
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	404
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	509
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	ACodec:E
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	AudioFlinger:E
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	AudioSink:E
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	AudioTrack:W
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	C2PlatformStore:E
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	CCodec:E
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	Codec2Client:E
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	HTTP_PROXY_AUTH
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	MediaCodec:E
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	MediaCodecAudioRenderer:E
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	MediaCodecRenderer:E
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	MediaCodecVideoRenderer:E
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	OMXClient:E
-1	regex	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	\\b(?:err(?:or)?|status|code)\\s*[:=]?\\s*(?:-12|0xfffffff4)\\b
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	audio codec
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	audioflinger
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	audiosink
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	audiotrack
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	cert_
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	certif
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	certificate verify failed
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	connection refused
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	connection reset
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	cryptoinfo
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	drm
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	enomem
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	error
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	error_key
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	format_unsupported
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	insufficient
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	invalid data found
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	logcat
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	no memory
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	not using proxy
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	omx_errorformat
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	out of memory
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	stubebox-logcat
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	ssl
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	tag
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	timed out
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	timeout
-1	log	player-core/src/main/java/de/stubebox/tv/player/PlayerDiagnostics.kt	unrecognized file format
-1	technical	player-core/src/main/java/de/stubebox/tv/player/ProviderLessons.kt	\0
-1	technical	player-core/src/main/java/de/stubebox/tv/player/ProviderLessons.kt	${lesson.kind.name} ${lesson.host} $at
-1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	${height}p
-1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	1080p
-1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	1440p
-1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	480p
-1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	4K
-1	technical	player-core/src/main/java/de/stubebox/tv/player/ResolutionLabel.kt	720p
-1	log	player-core/src/main/java/de/stubebox/tv/player/ResponseDeadline.kt	no response headers within ${deadlineMs}ms
-1	technical	player-core/src/main/java/de/stubebox/tv/player/ResponseDeadline.kt	stubebox-response-deadline
-1	log	player-core/src/main/java/de/stubebox/tv/player/ScreenOff.kt	ScreenOff
-1	log	player-core/src/main/java/de/stubebox/tv/player/ScreenOff.kt	lockNow failed
-1	technical	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	#
-2	protocol	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	#EXT-X-STREAM-INF:
-1	regex	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	(?<![A-Z-])BANDWIDTH=(\\d+)
-1	technical	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	HLG
-1	technical	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	PQ
-1	technical	player-core/src/main/java/de/stubebox/tv/player/SdrVariants.kt	VIDEO-RANGE="?([A-Za-z]+)
-1	empty	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	\0
-1	technical	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	${roundUpToMib(bytes) / MIB}MiB
-1	regex	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	(\\d+)\\s*([KkMmGg]i[Bb])?
-1	technical	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	gib
-1	technical	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	kib
-1	technical	player-core/src/main/java/de/stubebox/tv/player/SmartBuffer.kt	mib
-1	empty	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	\0
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	DASH
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	HLS
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	MKV
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	MP4
-1	protocol	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	MPEG-TS
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	dash
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	hls
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	m2ts
-2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	m3u
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	m3u8
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	m4a
-2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	m4v
-1	mime	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	matroska
-2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mkv
-2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mov
-1	mime	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mp2t
-2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mp4
-2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mpd
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mpegts
-1	mime	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mpegurl
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	mts
-1	mime	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	quicktime
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	ts
-2	technical	player-core/src/main/java/de/stubebox/tv/player/StreamFormatLabels.kt	webm
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamInfo.kt	$width×$height
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamInfo.kt	5.1
-1	technical	player-core/src/main/java/de/stubebox/tv/player/StreamInfo.kt	7.1
 1	technical	player-core/src/main/java/de/stubebox/tv/player/SubtitleFonts.kt	Dancing Script
 1	technical	player-core/src/main/java/de/stubebox/tv/player/SubtitleFonts.kt	Lora
 1	technical	player-core/src/main/java/de/stubebox/tv/player/SubtitleFonts.kt	Playfair Display
